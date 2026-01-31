@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  nginx:
+    image: tharunrajravi/custom-nginx:1.0
+    container_name: custom-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx-data:/var/opt/nginx
+
